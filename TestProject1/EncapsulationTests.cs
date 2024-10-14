@@ -25,7 +25,7 @@ public class EncapsulationTests
         BankAccount account = new BankAccount(12345, 1000, 0.05);
 
         // Act
-        account.Withdraw(200);
+        account.Withdraw(200, false);
 
         // Assert
         Assert.Equal(800, account.GetBalance());

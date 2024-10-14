@@ -1,4 +1,6 @@
-﻿namespace TestProject1;
+﻿using ClassLibrary1;
+
+namespace TestProject1;
 
 public class ClassRelationshipsTest
 {
@@ -41,6 +43,7 @@ public class ClassRelationshipsTest
 
         // Act
         Book foundBook = library.SearchBook("Title");
+  
 
         // Assert
         Assert.Equal(book, foundBook);

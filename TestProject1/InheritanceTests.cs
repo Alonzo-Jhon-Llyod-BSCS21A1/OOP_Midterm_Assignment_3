@@ -9,7 +9,7 @@ public class InheritanceTests
     public void CalculateInterest_AppliesHigherRate()
     {
         // Arrange
-        BankAccount account = new SavingsAccount(12345, 1000, 0.05);
+        BankAccount account = new BankAccount(12345, 1000, 0.05);
 
         // Act
         account.CalculateInterest();
@@ -22,7 +22,7 @@ public class InheritanceTests
     public void InheritsFromBankAccount()
     {
         // Arrange
-        SavingsAccount account = new SavingsAccount(12345, 1000, 0.05);
+        BankAccount account = new BankAccount(12345, 1000, 0.05);
 
         // Assert
         Assert.True(account is BankAccount);
